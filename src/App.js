@@ -1,12 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Navbar from './Components/Navbar';
+import News from './Components/News';
+export default class App extends Component {
+  name="Neel";
 
-function App() {
-  return (
-    <div className="App">
-      <div>This is our page</div>
-    </div>
-  );
+
+  render() {
+    return (
+      <>
+      <Navbar/>
+      <News/>
+      
+      </>
+    )
+  }
 }
 
-export default App;
