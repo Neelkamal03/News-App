@@ -96,6 +96,9 @@ export default class News extends Component {
                 description={element.description ? element.description.slice(0, 80) : ""}
                 newsUrl={element.url}
                 imageUrl={element.urlToImage}
+                author={element.author}
+                date={element.publishedAt}
+                source={element.source.name}
               />
             </div>
           })}
